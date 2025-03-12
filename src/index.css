@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+*{
+    /* font-family: "Outfit", sans-serif; */
+    font-family: "Poppins", sans-serif;
+}
+.font-logo{
+  font-family: "Big Shoulders Stencil", sans-serif;
+}
+
+.hover\:dotMove .transition-transform {
+    transform: translateY(8px); /* Moves the dot down a bit */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .hover\:dotMove:hover .transition-transform {
+    transform: translateY(-12px); /* Moves the dot further down when hovered */
+    transition: transform 0.3s ease-in-out;
+  }
+  
