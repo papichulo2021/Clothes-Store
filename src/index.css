@@ -1,20 +1,44 @@
 @import "tailwindcss";
 
-*{
-    /* font-family: "Outfit", sans-serif; */
-    font-family: "Poppins", sans-serif;
+* {
+  /* font-family: "Outfit", sans-serif; */
+  font-family: "Poppins", sans-serif;
 }
-.font-logo{
+
+.font-logo {
   font-family: "Big Shoulders Stencil", sans-serif;
 }
 
 .hover\:dotMove .transition-transform {
-    transform: translateY(8px); /* Moves the dot down a bit */
-    transition: transform 0.3s ease-in-out;
+  transform: translateY(8px); /* Moves the dot down a bit */
+  transition: transform 0.3s ease-in-out;
+}
+
+.hover\:dotMove:hover .transition-transform {
+  transform: translateY(-12px); /* Moves the dot further down when hovered */
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Sidebar.css */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -100%; /* Initially off-screen to the right */
+  height: 100%;
+  width: 300px; /* Or 497px for larger screens */
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 10s ease-in-out; /* Slow 10-second transition */
+  z-index: 50;
+}
+
+.sidebar.open {
+  transform: translateX(-100%); /* Move the sidebar into view (like a curtain) */
+}
+
+@media (min-width: 640px) {
+  .sidebar {
+    width: 497px;
   }
-  
-  .hover\:dotMove:hover .transition-transform {
-    transform: translateY(-12px); /* Moves the dot further down when hovered */
-    transition: transform 0.3s ease-in-out;
-  }
-  
+}

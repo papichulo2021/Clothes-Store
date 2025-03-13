@@ -1,22 +1,33 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { assets } from '../assets/assets';
-import Sidebar from './Siderbar';
+import Sidebar from './Sidebar';
+import SidebarMobile from './SidebarMobile';
+
 function Navbar() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [sidebarMobileOpen, setSidebarMobileOpen] = useState(false);
 
   const toggleSidebar = () => {
     setSidebarOpen(prevState => !prevState);
   };
 
+  const toggleMobileSidebar = () => {
+    setSidebarMobileOpen(prevState => !prevState);
+  };
+
   return (
     <div className='flex items-center justify-between py-6'>
       <div>
-        <p className='font-logo text-4xl uppercase flex font-[600] items-center tracking-wider hover:dotMove'>
-          Forever
-          <span className='ml-2 w-[10px] h-[10px] rounded-full bg-[rgb(197,134,165)] inline-block transition-transform'></span>
-        </p>
+        <NavLink to='/'>
+          <p className='font-logo text-4xl uppercase flex font-[600] items-center tracking-wider hover:dotMove'>
+            Forever
+            <span className='ml-2 w-[10px] h-[10px] rounded-full bg-[rgb(197,134,165)] inline-block transition-transform'></span>
+          </p>
+        </NavLink>
       </div>
+
+      {/* Desktop Navigation */}
       <ul className='hidden sm:flex gap-5 text-sm text-gray-700 uppercase font-semibold'>
         <NavLink to='/' className='relative group'>
           <p>Home</p>
@@ -40,10 +51,23 @@ function Navbar() {
       <div className='flex items-center gap-6'>
         <img src={assets.search_icon} className='w-5 cursor-pointer' alt="" />
         <img src={assets.profile_icon} className='w-5 cursor-pointer' alt="" />
-        <img src={assets.menu_icon} className='w-5 cursor-pointer' onClick={toggleSidebar} alt="" />
+        <NavLink to='/cart' className="relative">
+          <img src={assets.cart_icon} className='w-5 cursor-pointer' alt="" />
+          {/* Notification Badge at Bottom-Right */}
+          <p className='absolute bottom-[-5px] right-[-6px] w-4 h-4 text-xs font-semibold text-white bg-black rounded-full flex justify-center items-center'>
+            10
+          </p>
+        </NavLink>
+        {/* Menu Icon for Desktop */}
+        <img src={assets.menu_icon} className='w-5 cursor-pointer hidden sm:block' onClick={toggleSidebar} alt="" />
+        {/* Menu Icon for Mobile */}
+        <img src={assets.menu_icon} className='w-5 cursor-pointer sm:hidden' onClick={toggleMobileSidebar} alt="" />
       </div>
 
-      {/* Render Sidebar */}
+      {/* Sidebar Mobile */}
+      {sidebarMobileOpen && <SidebarMobile toggleMobileSidebar={toggleMobileSidebar} sidebarMobileOpen={sidebarMobileOpen} />}
+      
+      {/* Sidebar Desktop */}
       {sidebarOpen && <Sidebar toggleSidebar={toggleSidebar} sidebarOpen={sidebarOpen} />}
     </div>
   );
