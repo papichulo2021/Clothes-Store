@@ -6,7 +6,7 @@ function SidebarMobile({ toggleMobileSidebar }) {
     <div className='fixed top-0 left-0 right-0 bg-white z-50 h-full'>
       {/* Top Bar */}
       <div className='flex justify-between items-center py-4 px-6 bg-slate-600 text-white'>
-      <NavLink to='/'>
+        <NavLink to='/'>
           <p className='font-logo text-4xl uppercase flex font-[600] items-center tracking-wider hover:dotMove'>
             Forever
             <span className='ml-2 w-[10px] h-[10px] rounded-full bg-[rgb(197,134,165)] inline-block transition-transform'></span>
@@ -22,36 +22,40 @@ function SidebarMobile({ toggleMobileSidebar }) {
       <div className='p-6'>
         <ul className='flex flex-col gap-4'>
           <li className='relative group'>
-            <a
-              href="/"
+            <NavLink
+              to="/"
               className='text-lg text-gray-700 block border-b-2 border-transparent hover:border-[rgb(197,134,165)] hover:text-[rgb(197,134,165)] transition-all py-1'
+              activeClassName="text-[rgb(197,134,165)] border-[rgb(197,134,165)]"
             >
               Home
-            </a>
+            </NavLink>
           </li>
           <li className='relative group'>
-            <a
-              href="/collection"
+            <NavLink
+              to="/collection"
               className='text-lg text-gray-700 block border-b-2 border-transparent hover:border-[rgb(197,134,165)] hover:text-[rgb(197,134,165)] transition-all py-1'
+              activeClassName="text-[rgb(197,134,165)] border-[rgb(197,134,165)]"
             >
               Collection
-            </a>
+            </NavLink>
           </li>
           <li className='relative group'>
-            <a
-              href="/about"
+            <NavLink
+              to="/about"
               className='text-lg text-gray-700 block border-b-2 border-transparent hover:border-[rgb(197,134,165)] hover:text-[rgb(197,134,165)] transition-all py-1'
+              activeClassName="text-[rgb(197,134,165)] border-[rgb(197,134,165)]"
             >
               About
-            </a>
+            </NavLink>
           </li>
           <li className='relative group'>
-            <a
-              href="/contact"
+            <NavLink
+              to="/contact"
               className='text-lg text-gray-700 block border-b-2 border-transparent hover:border-[rgb(197,134,165)] hover:text-[rgb(197,134,165)] transition-all py-1'
+              activeClassName="text-[rgb(197,134,165)] border-[rgb(197,134,165)]"
             >
               Contact
-            </a>
+            </NavLink>
           </li>
         </ul>
       </div>

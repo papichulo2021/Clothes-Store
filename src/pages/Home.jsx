@@ -1,9 +1,9 @@
 import React from 'react'
-
+import HeroCarousel from '../components/Hero/HeroCarousel'
 function Home() {
   return (
-    <div>
-      Home
+    <div className=''>
+      <HeroCarousel />
     </div>
   )
 }

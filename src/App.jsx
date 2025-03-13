@@ -15,8 +15,10 @@ import Footer from './components/Footer';
 function App() {
 
   return (
-    <div className='px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]'>
-      <Navbar />
+    <div className=''>
+      <div className='px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]'>
+        <Navbar />
+      </div>
       <Routes>
         <Route path='/' element={<Home />} index></Route>
         <Route path='/collection' element={<Collection />} ></Route>

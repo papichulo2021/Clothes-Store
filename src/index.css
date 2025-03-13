@@ -42,3 +42,15 @@
     width: 497px;
   }
 }
+
+/* Customize navigation arrows color */
+.hero-swiper .swiper-button-next,
+.hero-swiper .swiper-button-prev {
+  color: gray; /* Default color */
+}
+
+/* Change color to black on hover */
+.hero-swiper .swiper-button-next:hover,
+.hero-swiper .swiper-button-prev:hover {
+  color: black; /* Color when hovered */
+}
