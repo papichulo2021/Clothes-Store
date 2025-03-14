@@ -9,17 +9,17 @@ function ProductItem({ id, image, name, price, status }) {
   // Icons for the statuses
   const statusIcons = {
     'fresh': (
-      <div className="absolute top-2 left-2 bg-green-500 text-white text-xs py-1 px-2 rounded-br-lg z-20">
+      <div className="absolute top-0 left-0 bg-green-500 text-white text-xs py-1 px-2 rounded-br-lg z-20">
         Fresh
       </div>
     ),
     'sold out': (
-      <div className="absolute top-2 left-2 bg-red-500 text-white text-xs py-1 px-2 rounded-br-lg z-20">
+      <div className="absolute top-0 left-0 bg-red-500 text-white text-xs py-1 px-2 rounded-br-lg z-20">
         Sold Out
       </div>
     ),
     'sale': (
-      <div className="absolute top-2 left-2 bg-yellow-500 text-white text-xs py-1 px-2 rounded-br-lg z-20">
+      <div className="absolute top-0 left-0 bg-yellow-500 text-white text-xs py-1 px-2 rounded-br-lg z-20">
         Sale
       </div>
     ),
@@ -34,7 +34,7 @@ function ProductItem({ id, image, name, price, status }) {
         <img className="hover:scale-110 transition ease-in-out" src={image[0]} alt={name} />
         
         {/* Hidden rectangle with icons, visible on hover */}
-        <div className="flex justify-between absolute bottom-0 left-0 right-0 bg-[rgba(255,255,255,0.8)] hidden group-hover:flex items-center justify-between p-2">
+        <div className="flex justify-between absolute bottom-0 left-0 right-0 bg-[rgba(255,255,255,0.9)] hidden group-hover:flex items-center justify-between p-2">
           <button className="text-black text-sm hover:border-b">
             Add to Cart
           </button>
@@ -49,8 +49,8 @@ function ProductItem({ id, image, name, price, status }) {
         </div>
       </div>
 
-      <p className="pt-3 pb-1 text-sm">{name}</p>
-      <p className="text-sm font-medium">{currency}{price}</p>
+      <p className="font-[500] pt-3 pb-1 text-sm">{name}</p>
+      <p className="text-sm text-gray-400 font-medium">{currency}{price}</p>
     </Link>
   );
 }

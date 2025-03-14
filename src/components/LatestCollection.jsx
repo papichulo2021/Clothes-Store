@@ -25,7 +25,7 @@ function LatestCollection() {
         <div className="mt-0 lg:mt-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 gap-y-6">
         {
             latestProducts.map((item,index)=>(
-                <ProductItem key={index} id={item.id} status={item.status} name={item.name} image={item.image} price={item.price} />
+                <ProductItem key={index} id={item._id} status={item.status} name={item.name} image={item.image} price={item.price} />
             ))
         }
         </div>

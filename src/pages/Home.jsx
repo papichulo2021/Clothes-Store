@@ -1,4 +1,5 @@
 import React from 'react'
+import BestSeller from '../components/BestSeller'
 import CategorySection from '../components/CategorySection'
 import HeroCarousel from '../components/Hero/HeroCarousel'
 import LatestCollection from '../components/LatestCollection'
@@ -9,6 +10,7 @@ function Home() {
       <div className='px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw] bg-[rgb(248,249,250)] p-10'>
         <CategorySection />
         <LatestCollection />
+        <BestSeller />
       </div>
     </div>
   )
