@@ -7,7 +7,7 @@ function CategorySection() {
       {/* Box for bg image */}
       <div className="relative w-[351px] h-[449px] md:w-[546px] md:h-[699px] overflow-hidden group">
         <img
-          className="object-cover w-full h-full transition-transform duration-300 ease-in-out group-hover:scale-110 group-hover:opacity-70"
+          className="rounded-lg object-cover w-full h-full transition-transform duration-300 ease-in-out group-hover:scale-110 group-hover:opacity-70"
           src={assets.bg}
           alt="Background"
         />
@@ -19,7 +19,7 @@ function CategorySection() {
       {/* Box for cuatro image */}
       <div className="relative w-[351px] h-[449px] md:w-[546px] md:h-[699px] overflow-hidden group">
         <img
-          className="object-cover w-full h-full transition-transform duration-300 ease-in-out group-hover:scale-110 group-hover:opacity-70"
+          className="rounded-lg object-cover w-full h-full transition-transform duration-300 ease-in-out group-hover:scale-110 group-hover:opacity-70"
           src={assets.cuatro}
           alt="Cuatro"
         />

@@ -1,23 +1,25 @@
 import React from 'react';
+import { assets } from '../../assets/assets';  // Import the assets object
 
 function HeroSection1() {
   return (
-    <div className="relative w-full h-screen bg-cover bg-center"
-         style={{ backgroundImage: "url('https://images.unsplash.com/photo-1605733160314-4fc7dac4bb16?w=300&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fHNob2VzfGVufDB8MHwwfHx8MA%3D%3D')" }}>
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-black opacity-20"></div>
-      
-      {/* Text and Button */}
-      <div className="absolute left-20 top-1/2 transform -translate-y-2/2 pl-8 sm:pl-12">
+    <div className="relative w-full h-screen flex bg-black"> {/* Set background color to black */}
+      {/* Left Side (Text) */}
+      <div className="w-1/2 flex flex-col justify-center pl-8 sm:pl-12 text-white">
         <div className="flex items-center gap-2">
-          <p className="w-8 md:w-11 h-[2px] bg-[#414141]"></p>
-          <p className="font-medium text-sm md:text-base">Our Bestsellers</p>
+          <p className="hidden md:block w-8 md:w-11 h-[2px] bg-[#414141]"></p>
+          <p className="font-medium text-md  md:text-2xl">Our Bestsellers</p>
         </div>
-        <h1 className="text-3xl sm:py-3 lg:text-5xl leading-relaxed">Discover Our Collection</h1>
-        <div className="flex items-center gap-2">
+        <h1 className="ml-0 lg:ml-10 max-w-[500px] text-3xl sm:py-3 lg:text-5xl lg:font-medium leading-relaxed">Discover Our Collection</h1>
+        <div className="flex items-center ml-0 md:ml-2 gap-2">
           <p>Explore Now</p>
           <p className="w-8 md:w-11 h-[1px] bg-[#414141]"></p>
         </div>
+      </div>
+
+      {/* Right Side (Image with Overlay) */}
+      <div className="relative w-1/2 bg-cover bg-center" style={{ backgroundImage: `url(${assets.a4})` }}>
+        <div className="absolute inset-0 bg-black opacity-10"></div> {/* Overlay */}
       </div>
     </div>
   );

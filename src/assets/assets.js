@@ -1,4 +1,15 @@
 import p_img1 from './p_img1.png'
+import a1 from './a1.jpg'
+import a2 from './a2.jpg'
+import a3 from './a3.jpg'
+import a4 from './a4.jpg'
+import a5 from './a5.jpg'
+import a6 from './a6.jpg'
+import a7 from './a7.jpg'
+import a8 from './a8.jpg'
+import a9 from './a9.jpg'
+import a10 from './a10.jpg'
+
 import bg from './bg.png'
 import p_img2_1 from './p_img2_1.png'
 import p_img2_2 from './p_img2_2.png'
@@ -97,8 +108,17 @@ export const assets = {
     cross_icon,
     bg,
     tara,
-    cuatro
-    
+    cuatro,
+    a1,
+    a2,
+    a3,
+    a4,
+    a5,
+    a6,
+    a7,
+    a8,
+    a9,
+    a10,    
 }
 
 export const products = [
@@ -136,7 +156,8 @@ export const products = [
         subCategory: "Topwear",
         sizes: ["S", "L", "XL"],
         date: 1716234545448,
-        bestseller: true
+        bestseller: true,
+        status:'fresh'
     },
     {
         _id: "aaaad",
@@ -148,7 +169,9 @@ export const products = [
         subCategory: "Topwear",
         sizes: ["S", "M", "XXL"],
         date: 1716621345448,
-        bestseller: true
+        bestseller: true,
+        status:'sold out'
+
     },
     {
         _id: "aaaae",
@@ -184,7 +207,8 @@ export const products = [
         subCategory: "Bottomwear",
         sizes: ["S", "L", "XL"],
         date: 1716621542448,
-        bestseller: false
+        bestseller: false,
+        status:'sale'
     },
     {
         _id: "aaaah",
