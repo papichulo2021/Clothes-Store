@@ -66,6 +66,7 @@ import p_img50 from './p_img50.png'
 import p_img51 from './p_img51.png'
 import p_img52 from './p_img52.png'
 import tara from './tara.jpg'
+import z1 from './z1.svg'
 
 import logo from './logo.png'
 import hero_img from './hero_img.png'
@@ -118,7 +119,8 @@ export const assets = {
     a7,
     a8,
     a9,
-    a10,    
+    a10, 
+    z1,   
 }
 
 export const products = [

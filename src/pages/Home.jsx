@@ -4,6 +4,8 @@ import CategorySection from '../components/CategorySection'
 import DealCounter from '../components/DealCounter'
 import HeroCarousel from '../components/Hero/HeroCarousel'
 import LatestCollection from '../components/LatestCollection'
+import OurHistory from '../components/OurHistory'
+import OurPolicy from '../components/OurPolicy'
 function Home() {
   return (
     <div className=''>
@@ -14,7 +16,8 @@ function Home() {
         <BestSeller />
       </div>
         <DealCounter />
-      
+        <OurHistory />
+        <OurPolicy />
     </div>
   )
 }
