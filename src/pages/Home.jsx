@@ -1,6 +1,7 @@
 import React from 'react'
 import BestSeller from '../components/BestSeller'
 import CategorySection from '../components/CategorySection'
+import DealCounter from '../components/DealCounter'
 import HeroCarousel from '../components/Hero/HeroCarousel'
 import LatestCollection from '../components/LatestCollection'
 function Home() {
@@ -12,6 +13,8 @@ function Home() {
         <LatestCollection />
         <BestSeller />
       </div>
+        <DealCounter />
+      
     </div>
   )
 }
