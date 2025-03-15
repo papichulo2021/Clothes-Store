@@ -38,25 +38,25 @@ function DealCounter({id}) {
   }, []);
 
   return (
-    <div className="flex px-30 py-35 bg-[rgb(238,227,227)]">
-      <div className="flex flex-col gap-4">
+    <div className="flex flex-col lg:flex-row px-5 lg:px-30 py-7 lg:py-35 bg-[rgb(238,227,227)]">
+      <div className="flex flex-col gap-4 lg:w-1/2">
         <p className="font-bold text-[rgb(220,53,69)] uppercase">Deal of the week</p>
         <p className="text-4xl font-semibold">Oversized denim jacket</p>
         <p className="text-gray-500 font-semibold">
           <span className='line-through'>$129.00</span> <span className="ml-2">$79.00</span>
         </p>
-        <button className="text-white font-bold w-[7vw] bg-[rgb(220,53,69)] px-3 py-2 mb-2">
+        <button className="text-white font-bold w-full lg:w-[7vw] bg-[rgb(220,53,69)] px-3 py-2 mb-2">
           $50 off
         </button>
-        <div className="w-[60vw] bg-white p-7">
-          <div className="flex justify-between px-20 gap-4 mt-2">
+        <div className="w-full lg:w-[60vw] bg-white p-5 lg:p-7">
+          <div className="flex justify-between px-5 lg:px-20 gap-4 mt-2">
             <div className="flex flex-col items-center">
               <span className="font-bold text-2xl">{timeLeft.days}</span>
               <span className='text-gray-500 font-semibold'>Days</span>
             </div>
             <div className="flex flex-col items-center">
               <span className="font-bold text-2xl">{timeLeft.hours}</span>
-              <span className='text-gray-500 font-semibold' >Hours</span>
+              <span className='text-gray-500 font-semibold'>Hours</span>
             </div>
             <div className="flex flex-col items-center">
               <span className="font-bold text-2xl">{timeLeft.minutes}</span>
@@ -68,10 +68,12 @@ function DealCounter({id}) {
             </div>
           </div>
         </div>
-        <Link to={`/product/${id}`} className="w-1/4 text-center p-2 font-semibold border mt-4">Shop Now</Link>
+        <Link to={`/product/${id}`} className="w-full lg:w-1/4 text-center p-2 font-semibold border mt-4">
+          Shop Now
+        </Link>
       </div>
-      <div>
-          
+      <div className="hidden lg:block lg:w-1/2">
+        {/* You can place any other content or image here for desktop view */}
       </div>
     </div>
   );
