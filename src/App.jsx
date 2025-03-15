@@ -31,6 +31,7 @@ function App() {
         <Route path='/orders' element={<Orders />}></Route>
         <Route path='/blog' element={<Blog />} ></Route>
       </Routes>
+      <Footer />
     </div>
   )
 }

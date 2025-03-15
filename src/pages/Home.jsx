@@ -4,6 +4,7 @@ import CategorySection from '../components/CategorySection'
 import DealCounter from '../components/DealCounter'
 import HeroCarousel from '../components/Hero/HeroCarousel'
 import LatestCollection from '../components/LatestCollection'
+import NewsLetterBox from '../components/NewsLetterBox'
 import OurHistory from '../components/OurHistory'
 import OurPolicy from '../components/OurPolicy'
 function Home() {

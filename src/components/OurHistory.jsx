@@ -10,7 +10,7 @@ import z6 from '../assets/z6.svg'; // Import the SVG file
 
 function OurHistory() {
   return (
-    <div className='p-6 sm:p-10 md:p-20 '>
+    <div className='flex flex-col justify-center gap-4 text py-20 mx-20'>
       <p className='text-xl sm:text-2xl md:text-3xl font-semibold tracking-[4px] text-[rgb(188,172,118)] uppercase'>
         Our History
       </p>
