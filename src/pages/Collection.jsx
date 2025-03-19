@@ -401,8 +401,9 @@ function Collection() {
           </div>
           )}
       </div>
+      <hr className="my-5 border-gray-300" />
     {/*--- Right Side ---*/}
-      <div className='flex-1'>
+      <div className='flex-1 mt-5'>
         <div className='flex align-center justify-between max-h-10 text-base sm:text-2xl mb-4'>
           <Title text1={'All'} text2={'Collections'} />
           {/* Product Sort */}
