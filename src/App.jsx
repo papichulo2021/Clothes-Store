@@ -11,12 +11,15 @@ import Product from './pages/Product';
 import About from './pages/About';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import { ToastContainer, toast } from 'react-toastify';
+
 
 function App() {
 
   return (
     <div className=''>
       <div className='px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]'>
+        <ToastContainer />
         <Navbar />
       </div>
       <Routes>

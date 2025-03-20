@@ -1,12 +1,14 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { assets } from '../assets/assets';
+import { ShopContext } from '../context/ShopContext';
 import Sidebar from './Sidebar';
 import SidebarMobile from './SidebarMobile';
 
 function Navbar() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [sidebarMobileOpen, setSidebarMobileOpen] = useState(false);
+  const {getCartCount} = useContext(ShopContext);
 
   const toggleSidebar = () => {
     setSidebarOpen(prevState => !prevState);
@@ -55,7 +57,7 @@ function Navbar() {
           <img src={assets.cart_icon} className='w-5 cursor-pointer' alt="" />
           {/* Notification Badge at Bottom-Right */}
           <p className='absolute bottom-[-5px] right-[-6px] w-4 h-4 text-xs font-semibold text-white bg-black rounded-full flex justify-center items-center'>
-            10
+            {getCartCount()}
           </p>
         </NavLink>
         {/* Menu Icon for Desktop */}

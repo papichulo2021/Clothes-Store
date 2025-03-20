@@ -54,3 +54,9 @@
 .hero-swiper .swiper-button-prev:hover {
   color: black; /* Color when hovered */
 }
+
+/* Hide scrollbar */
+
+::-webkit-scrollbar{
+  display: none;
+}
