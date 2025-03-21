@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink,Link } from 'react-router-dom';
 import { assets } from '../assets/assets';
 import { ShopContext } from '../context/ShopContext';
 import Sidebar from './Sidebar';
@@ -52,7 +52,7 @@ function Navbar() {
       {/* Sidebar */}
       <div className='flex items-center gap-6'>
         <img src={assets.search_icon} className='w-5 cursor-pointer' alt="" />
-        <img src={assets.profile_icon} className='w-5 cursor-pointer' alt="" />
+        <Link to={'/login'}><img src={assets.profile_icon} className='w-5 cursor-pointer' alt="" /></Link>
         <NavLink to='/cart' className="relative">
           <img src={assets.cart_icon} className='w-5 cursor-pointer' alt="" />
           {/* Notification Badge at Bottom-Right */}
