@@ -11,6 +11,8 @@ import a9 from './a9.jpg'
 import a10 from './a10.jpg'
 
 import bg from './bg.png'
+import about from './about-1.jpg'
+import about2 from './about2.jpg'
 import p_img2_1 from './p_img2_1.png'
 import p_img2_2 from './p_img2_2.png'
 import p_img2_3 from './p_img2_3.png'
@@ -89,6 +91,8 @@ import cross_icon from './cross_icon.png'
 import cuatro from './14.jpg'
 
 export const assets = {
+    about,
+    about2,
     logo,
     hero_img,
     cart_icon,

@@ -23,7 +23,7 @@ function Navbar() {
       <div>
         <NavLink to='/'>
           <p className='font-logo text-4xl uppercase flex font-[600] items-center tracking-wider hover:dotMove'>
-            Forever
+            Varkala
             <span className='ml-2 w-[10px] h-[10px] rounded-full bg-[rgb(197,134,165)] inline-block transition-transform'></span>
           </p>
         </NavLink>
