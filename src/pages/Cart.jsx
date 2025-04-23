@@ -36,7 +36,7 @@ function Cart() {
   }, [cartItems]); // Re-run the effect when cartItems change
 
   return (
-    <div className='mx-15 border-t pt-14'>
+    <div className='min-h-[100vh] mx-15 border-t pt-14'>
       <div className='text-2xl mb-3'>
         <Title text1={'Your'} text2={'Cart'} />
       </div>
