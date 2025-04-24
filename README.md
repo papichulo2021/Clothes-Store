@@ -4,7 +4,7 @@
 
 # 🛍️ Clothes Store UI
 
-A modern and elegant **clothing store frontend** built using **React + Vite**, with interactive maps powered by **Leaflet.js**.  
+A modern and elegant **clothing store frontend** built using **React**, with interactive maps powered by **Leaflet.js**.  
 This project focuses purely on the UI/UX, showcasing store locations, a contact form, and responsive layout design.
 
 🌐 **Live Demo:** [clothes-store.vercel.app](https://clothes-store-liard-seven.vercel.app/)
