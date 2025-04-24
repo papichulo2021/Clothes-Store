@@ -1,6 +1,6 @@
-# Varkala UI 
+## 📸 Varkala
 
-![Varkala Header](https://raw.githubusercontent.com/papichulo2021/Clothes-Store/378746a2eafedea03a20119714b6381a6cfc8fde/src/assets/varkala1.png)
+![Varkala UI](https://raw.githubusercontent.com/papichulo2021/Clothes-Store/378746a2eafedea03a20119714b6381a6cfc8fde/src/assets/varkala1.png)
 
 # 🛍️ Clothes Store UI
 
@@ -11,9 +11,6 @@ This project focuses purely on the UI/UX, showcasing store locations, a contact 
 
 ---
 
-## 📸 Preview
-
-![Varkala UI](https://raw.githubusercontent.com/papichulo2021/Clothes-Store/378746a2eafedea03a20119714b6381a6cfc8fde/src/assets/varkala1.png)
 
 ---
 
