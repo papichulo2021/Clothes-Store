@@ -34,5 +34,23 @@ This project focuses purely on the UI/UX, showcasing store locations, a contact 
 
 ---
 
-## 📂 Folder Structure (Simplified)
+## 🚀 Quick Start
+
+Clone the project and get up and running in seconds:
+
+```bash
+# 1. Clone the repo
+git clone https://github.com/papichulo2021/Clothes-Store.git
+
+# 2. Move into the project folder
+cd Clothes-Store
+
+# 3. Install dependencies
+npm install
+
+# 4. Start the development server
+npm run dev
+
+# 5. Build for production
+npm run build
 
