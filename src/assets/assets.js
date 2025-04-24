@@ -112,7 +112,6 @@ export const assets = {
     stripe_logo,
     cross_icon,
     bg,
-    bg1,
     tara,
     cuatro,
     a1,
