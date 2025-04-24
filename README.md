@@ -2,13 +2,40 @@
 
 ![Varkala Header](https://raw.githubusercontent.com/papichulo2021/Clothes-Store/378746a2eafedea03a20119714b6381a6cfc8fde/src/assets/varkala1.png)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🛍️ Clothes Store UI
 
-Currently, two official plugins are available:
+A modern and elegant **clothing store frontend** built using **React + Vite**, with interactive maps powered by **Leaflet.js**.  
+This project focuses purely on the UI/UX, showcasing store locations, a contact form, and responsive layout design.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🌐 **Live Demo:** [clothes-store.vercel.app](https://clothes-store-liard-seven.vercel.app/)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📸 Preview
+
+![Varkala UI](https://raw.githubusercontent.com/papichulo2021/Clothes-Store/378746a2eafedea03a20119714b6381a6cfc8fde/src/assets/varkala1.png)
+
+---
+
+## ✨ Features
+
+- ⚡️ Built with **Vite** for lightning-fast development.
+- ⚛️ Responsive UI using **React + Tailwind CSS**.
+- 🗺️ Integrated **Leaflet.js** map with markers for store locations.
+- 📧 Functional **contact form** with validation.
+- 🌍 Clean layout for showcasing multiple store branches.
+
+---
+
+## 🛠️ Tech Stack
+
+- [React](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [React Leaflet](https://react-leaflet.js.org/)
+- [Vercel](https://vercel.com/) for deployment
+
+---
+
+## 📂 Folder Structure (Simplified)
+
