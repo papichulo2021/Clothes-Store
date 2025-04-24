@@ -1,5 +1,7 @@
 # Varkala UI 
 
+![Varkala Header](https://raw.githubusercontent.com/papichulo2021/Clothes-Store/378746a2eafedea03a20119714b6381a6cfc8fde/src/assets/varkala1.png)
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
